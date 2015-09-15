@@ -1,0 +1,25 @@
+<div ng-app="Platzi" ng-controller="BaseCtrl">
+    <h1>Hello Platzi</h1>
+
+    <ul>
+	    <li ng-repeat="thing in things">
+	    	<span>{{thing.name}}</span>
+	    </li>
+    </ul>
+
+
+</div>
+
+<script>
+
+angular.module('Platzi',[])
+angular.module('Platzi').controller('BaseCtrl', ['$scope', function ($scope){
+
+	$scope.things = [{
+		id: 0102938210938213098,
+		name: 'foo'
+	}];
+
+}]);
+
+</script>
